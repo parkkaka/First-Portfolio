@@ -1,0 +1,2595 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main_box {
+  width: 120rem;
+  height: 108rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top_btn {
+  width: 8rem;
+  height: 8rem;
+  background-color: #f5f5f5;
+  color: #646464;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  position: fixed;
+  top: 80%;
+  left: 83%;
+  z-index: 9999;
+}
+
+.top_btn:hover {
+  cursor: pointer;
+  color: #f00;
+  outline: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #c8c8c8;
+          box-shadow: 0.1rem 0.1rem 0.1rem #c8c8c8;
+}
+
+.page_modal {
+  width: 57rem;
+  height: 10rem;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #fff;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  border-radius: 1rem;
+  padding-left: 6rem;
+  color: #646464;
+  border: 1.5rem solid #646464;
+  line-height: 5rem;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.x_btn {
+  width: 5rem;
+  height: 100%;
+  background-color: #fff;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0.3rem solid #646464;
+}
+
+.x_btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #eb0000;
+}
+
+.header {
+  width: 120rem;
+  height: 11rem;
+}
+
+.nav {
+  width: 120rem;
+  height: 10rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contents {
+  width: 120rem;
+  height: 88rem;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  width: 120rem;
+  height: 88rem;
+  z-index: -1;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.content1 {
+  width: 60rem;
+  height: 88rem;
+  float: left;
+  position: relative;
+}
+
+.content2 {
+  width: 60rem;
+  height: 88rem;
+  float: left;
+  position: relative;
+}
+
+.footer {
+  width: 120rem;
+  height: 10rem;
+  position: absolute;
+  top: 90%;
+  background-color: #fff;
+}
+
+.kt_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/kt.png");
+  margin: 5rem 3.75rem 2.75rem 2rem;
+  float: left;
+}
+
+.t1_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/t1.png");
+  margin: 5rem 3.75rem 2.75rem 2rem;
+  float: left;
+}
+
+.dwg_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/kia.png");
+  margin: 5rem 3.75rem 2.75rem 2rem;
+  float: left;
+}
+
+.gen_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/geng.svg");
+  margin: 5rem 3.75rem 2.75rem 2rem;
+  float: left;
+}
+
+.drx_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/drx.png");
+  margin: 5rem 4.5rem 2.75rem 2rem;
+  float: left;
+}
+
+.lck_img {
+  width: 27rem;
+  height: 8rem;
+  background-image: url("../image/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border: 0.5rem solid #ffebf0;
+  float: left;
+  margin: 1rem 1.75rem 1rem 1.75rem;
+}
+
+.snadbox_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/sandbox.png");
+  margin: 5rem 2rem 2.75rem 3.75rem;
+  float: right;
+}
+
+.hwa_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/hanwha.png");
+  margin: 5rem 2rem 2.75rem 3.75rem;
+  float: right;
+}
+
+.pradit_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/fredit.png");
+  margin: 5rem 2rem 2.75rem 3.75rem;
+  float: right;
+}
+
+.freecs_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/freecs.png");
+  margin: 5rem 2rem 2.75rem 3.75rem;
+  float: right;
+}
+
+.redfoce_img {
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../image/redfoce.png");
+  margin: 5rem 2rem 2.75rem 3.75rem;
+  float: right;
+}
+
+.notice_area, .play_schedul, .team_rank, .team_player, .stadium_location, .ticket_pre_buy {
+  width: 18rem;
+  height: 6rem;
+  line-height: 5.8rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #646464;
+  float: left;
+  margin: 2rem 1rem 2rem 1rem;
+  cursor: pointer;
+}
+
+.highlight_video {
+  width: 18rem;
+  height: 6rem;
+  line-height: 5.8rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #646464;
+  float: left;
+  margin: 2rem 1rem 2rem 1rem;
+  cursor: pointer;
+}
+
+.play_schedul:hover,
+.team_rank:hover,
+.team_player:hover,
+.highlight_video:hover,
+.stadium_location:hover,
+.ticket_pre_buy:hover {
+  color: #c8c8c8;
+}
+
+.lck_logo {
+  width: 25rem;
+  height: 12rem;
+  margin: 2rem 1rem 1rem 1rem;
+  background-image: url("../image/lck_contents_logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-float: left;
+  border: 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+.lck_logo:hover {
+  cursor: pointer;
+  transform: translate(0, 5%) scale(1, 1);
+  -webkit-transform: translate(0, 5%) scale(1, 1);
+  -moz-transform: translate(0, 5%) scale(1, 1);
+  -ms-transform: translate(0, 5%) scale(1, 1);
+  -o-transform: translate(0, 5%) scale(1, 1);
+}
+
+.left_mouse {
+  width: 3rem;
+  height: 1rem;
+  color: #c8c8c8;
+  position: absolute;
+  top: 3%;
+  left: 36%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.right_mouse {
+  width: 3rem;
+  height: 1rem;
+  color: #c8c8c8;
+  position: absolute;
+  top: 23%;
+  left: 87%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.new {
+  width: 3rem;
+  height: 1rem;
+  color: #c8c8c8;
+  float: right;
+}
+
+.blink {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: #f5f5f5;
+  }
+  100% {
+    color: #646464;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: #f5f5f5;
+  }
+  100% {
+    color: #646464;
+  }
+}
+
+.mid_box {
+  width: 25rem;
+  height: 25rem;
+  float: left;
+  margin: 1rem 7.5rem 1rem 1rem;
+  border-radius: 2rem;
+  display: none;
+  position: relative;
+}
+
+.last_year_rank {
+  width: 23rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  background-color: #ffe3ee;
+  border-radius: 2rem;
+  float: left;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.last_rank1 {
+  width: 6.5rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #646464;
+  border: 0.5rem solid #ffc0cb;
+  border-radius: 50%;
+  position: absolute;
+  top: 9%;
+  left: 10%;
+}
+
+.last_rank2 {
+  width: 6.5rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #646464;
+  border: 0.5rem solid #ffc0cb;
+  border-radius: 50%;
+  position: absolute;
+  top: 58%;
+  left: 10%;
+}
+
+.mid_box2 {
+  width: 23rem;
+  height: 10rem;
+  background-color: #ffe3ee;
+  margin-top: 12rem;
+  float: left;
+  border-radius: 2rem;
+}
+
+.last_year_rank_logo1 {
+  width: 8rem;
+  height: 8rem;
+  background-image: url("../image/kia.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 8%;
+  left: 60%;
+}
+
+.last_year_rank_logo2 {
+  width: 8rem;
+  height: 8rem;
+  float: right;
+  background-image: url("../image/t1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 57%;
+  left: 57%;
+}
+
+.event_box {
+  width: 60rem;
+  height: 30rem;
+  background-image: url("../image/winEvent.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  margin: 53rem 2rem 1rem 1rem;
+}
+
+.best_player_week {
+  width: 17rem;
+  height: 50rem;
+  float: right;
+  margin: 19rem 8rem 0rem 1rem;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: right;
+  line-height: 7rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+.best_player_week:hover {
+  color: #eb0000;
+  transform: translate(-5%);
+  -webkit-transform: translate(-5%);
+  -moz-transform: translate(-5%);
+  -ms-transform: translate(-5%);
+  -o-transform: translate(-5%);
+}
+
+.best_mid_box {
+  width: 37rem;
+  height: 46rem;
+  float: right;
+  margin: -48rem 22rem 0rem 1rem;
+  display: none;
+}
+
+.top_name {
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+  line-height: 5rem;
+  float: left;
+  margin: 2rem 2rem 1rem 2rem;
+  text-shadow: 0.1rem 0.1rem #464646;
+}
+
+.top_player_img {
+  width: 12rem;
+  height: 8rem;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0.1rem 1rem 0.5rem 1rem;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  border: 0.3rem solid #ffe4e1;
+  background-image: url("../image/top.png");
+}
+
+.jungle_name {
+  width: 16rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+  line-height: 5rem;
+  float: left;
+  margin: 2rem 1rem 1rem 2rem;
+  text-shadow: 0.1rem 0.1rem #464646;
+}
+
+.jungle_player_img {
+  width: 12rem;
+  height: 8rem;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0.1rem 1rem 0.5rem 1rem;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  border: 0.3rem solid #ffe4e1;
+  background-image: url("../image/jungle.png");
+}
+
+.mid_name {
+  width: 12rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+  line-height: 5rem;
+  float: left;
+  margin: 2rem 5rem 1rem 2rem;
+  text-shadow: 0.1rem 0.1rem #464646;
+}
+
+.mid_player_img {
+  width: 12rem;
+  height: 8rem;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0.1rem 1rem 0.5rem 1rem;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  border: 0.3rem solid #ffe4e1;
+  background-image: url("../image/mid.png");
+}
+
+.ad_name {
+  width: 16rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+  line-height: 5rem;
+  float: left;
+  margin: 2rem 1rem 1rem 2rem;
+  text-shadow: 0.1rem 0.1rem #464646;
+}
+
+.ad_player_img {
+  width: 12rem;
+  height: 8rem;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0.1rem 1rem 0.5rem 1rem;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  border: 0.3rem solid #ffe4e1;
+  background-image: url("../image/ad.png");
+}
+
+.sup_name {
+  width: 12rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: #f5f5f5;
+  line-height: 5rem;
+  float: left;
+  margin: 2rem 5rem 1rem 2rem;
+  text-shadow: 0.1rem 0.1rem #464646;
+}
+
+.sup_player_img {
+  width: 12rem;
+  height: 8rem;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0.1rem 1rem 0.5rem 1rem;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  border: 0.3rem solid #ffe4e1;
+  background-image: url("../image/keria.gif");
+}
+
+.text_area {
+  width: 30rem;
+  height: 8.5rem;
+  float: left;
+  margin: 1rem 0 0.1rem 0rem;
+  font-size: 1.4rem;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: left;
+}
+
+.punch_logo {
+  width: 20rem;
+  height: 8.5rem;
+  float: left;
+  margin: 0.1rem 0.1rem;
+  background-image: url("../image/footer_puch_logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.modal_area {
+  width: 30rem;
+  height: 10rem;
+  position: relative;
+  top: -80%;
+  left: 38%;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+  display: none;
+}
+
+.sevice_practice {
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.x_button {
+  width: 10rem;
+  height: 2rem;
+  position: absolute;
+  top: 65%;
+  left: 34%;
+}
+
+.main_box2, .main_box3, .main_box4 {
+  width: 120rem;
+  height: 108rem;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.date_info {
+  width: 25rem;
+  height: 8rem;
+  font-size: 2.5rem;
+  background-color: #bc28fb;
+  border-radius: 2rem;
+  position: absolute;
+  top: 58%;
+  left: 10%;
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.right_btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5rem;
+  position: absolute;
+  top: 53%;
+  left: 30%;
+  z-index: 1;
+}
+
+.notice_spring {
+  width: 120rem;
+  height: 10rem;
+  text-align: center;
+  color: #646464;
+  padding-top: 3rem;
+  font-size: 6rem;
+  line-height: 10rem;
+}
+
+.writing_date {
+  width: 115rem;
+  height: 10rem;
+  text-align: right;
+  font-size: 3rem;
+  color: #646464;
+  line-height: 10rem;
+  float: right;
+  padding-right: 5rem;
+  position: relative;
+}
+
+.writing_date::after {
+  content: "new";
+  width: 3rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #f5f5f5;
+  background-color: #f00;
+  font-size: small;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 3.6rem;
+}
+
+.Feb_month {
+  width: 20rem;
+  height: 14rem;
+  font-size: 12rem;
+  position: absolute;
+  top: 27%;
+  left: 82%;
+  text-align: center;
+  line-height: 14rem;
+  color: #464646;
+}
+
+.calender_box {
+  width: 70rem;
+  height: 50rem;
+  position: relative;
+  top: 28.5%;
+  left: 40%;
+  border-radius: 2rem;
+  background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxOTEwMjZfMTI4%2FMDAxNTcyMDY3MTE3Njgy.SC1juw1CPKp-WbQj6gktZDFka-K3PZlq40XkGevFxw0g.N1oewJEorEVuRqwFbBvYMf4VljYmtB9kccU6McnJhisg.JPEG%2FexternalFile.jpg&type=sc960_832");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.play_time, .play_spot {
+  width: 40rem;
+  height: 5rem;
+  float: right;
+  font-size: 3rem;
+  text-align: right;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem #000;
+  position: absolute;
+  top: 4%;
+  left: 35%;
+}
+
+.main_date, .main_date2 {
+  width: 68rem;
+  height: 7.5rem;
+  position: absolute;
+  top: 9rem;
+  left: 0rem;
+  float: left;
+  text-align: center;
+}
+
+.date {
+  width: 5.5rem;
+  height: 6rem;
+  float: left;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  margin: 0.1rem 2rem 0.1rem 1.5rem;
+  color: #fff;
+}
+
+.date_sun {
+  width: 5.5rem;
+  height: 6rem;
+  float: left;
+  margin-left: 5.5rem;
+}
+
+.main_day {
+  width: 63rem;
+  height: 33rem;
+  position: absolute;
+  top: 100%;
+  left: 6%;
+}
+
+.day {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 2rem;
+  float: left;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 3rem;
+  margin: 0.1rem 2rem 0.1rem 1rem;
+  color: #fff;
+}
+
+.last_day {
+  color: lightgray;
+}
+
+.play_day,
+.date_info {
+  -webkit-animation: play_day 1.5s linear infinite;
+          animation: play_day 1.5s linear infinite;
+}
+
+@-webkit-keyframes play_day {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #f00;
+  }
+}
+
+@keyframes play_day {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #f00;
+  }
+}
+
+.play_day:hover {
+  cursor: pointer;
+  transform: translate(-20%, -10%);
+  -webkit-transform: translate(-20%, -10%);
+  -moz-transform: translate(-20%, -10%);
+  -ms-transform: translate(-20%, -10%);
+  -o-transform: translate(-20%, -10%);
+}
+
+.sun_day {
+  color: #ff8c8c;
+}
+
+.sat_day {
+  color: lightblue;
+}
+
+.play_info1 {
+  width: 40rem;
+  height: 70rem;
+  background-color: #bc28fb;
+  border-radius: 2rem;
+  position: absolute;
+  top: 22%;
+  left: 1.8%;
+  display: none;
+}
+
+.t1_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/t1.png");
+  top: 3rem;
+  left: 3rem;
+}
+
+.t1_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 3rem;
+  left: 21rem;
+}
+
+.hle_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/hanwha.png");
+  top: 60%;
+  left: 55%;
+}
+
+.hle_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 60%;
+  left: 10%;
+  text-align: left;
+}
+
+.drx_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/drx.png");
+  top: 3rem;
+  left: 3rem;
+}
+
+.drx_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 3rem;
+  left: 21rem;
+}
+
+.kt_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/kt.png");
+  top: 60%;
+  left: 55%;
+}
+
+.kt_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 60%;
+  left: 10%;
+  text-align: left;
+}
+
+.dk_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/kia.png");
+  top: 3rem;
+  left: 3rem;
+}
+
+.dk_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 3rem;
+  left: 21rem;
+}
+
+.kdf_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/freecs.png");
+  top: 60%;
+  left: 55%;
+}
+
+.kdf_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 60%;
+  left: 10%;
+  text-align: left;
+}
+
+.lsb_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/sandbox.png");
+  top: 3rem;
+  left: 3rem;
+}
+
+.lsb_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 3rem;
+  left: 21rem;
+}
+
+.gen_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/geng.svg");
+  top: 60%;
+  left: 55%;
+}
+
+.gen_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 60%;
+  left: 10%;
+  text-align: left;
+}
+
+.ns_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/redfoce.png");
+  top: 3rem;
+  left: 3rem;
+}
+
+.ns_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 3rem;
+  left: 21rem;
+}
+
+.bro_play {
+  width: 15rem;
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-image: url("../image/fredit.png");
+  top: 60%;
+  left: 55%;
+}
+
+.bro_play_info {
+  width: 15rem;
+  height: 27rem;
+  display: block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  border-radius: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+  top: 60%;
+  left: 10%;
+  text-align: left;
+}
+
+.vs_mark {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 43%;
+  left: 35%;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 10rem;
+  border-radius: 50%;
+  border: 0.2rem solid #ffe4e1;
+}
+
+.line {
+  width: 15rem;
+  border: 0.1rem solid lightgray;
+  position: absolute;
+  top: 58%;
+  left: 44%;
+}
+
+.main_title, .highlight_title, .road_title, .ticket_title {
+  width: 120rem;
+  height: 10rem;
+  text-align: center;
+  color: #646464;
+  font-size: 6rem;
+  line-height: 10rem;
+  padding-top: 3rem;
+}
+
+.team_ranked {
+  width: 120rem;
+  height: 8rem;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team_name {
+  width: 10rem;
+  height: 6rem;
+  font-size: 5rem;
+  color: #646464;
+  text-align: center;
+  line-height: 7rem;
+  float: left;
+  margin: 0rem 29rem 0 3rem;
+}
+
+.win {
+  width: 10rem;
+  height: 6rem;
+  font-size: 5rem;
+  color: #646464;
+  text-align: center;
+  line-height: 7rem;
+  float: left;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.lose {
+  width: 10rem;
+  height: 6rem;
+  font-size: 5rem;
+  color: #646464;
+  text-align: center;
+  line-height: 7rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.win_rate {
+  width: 10rem;
+  height: 6rem;
+  font-size: 5rem;
+  color: #646464;
+  text-align: center;
+  line-height: 7rem;
+  float: left;
+}
+
+.gain_lose {
+  width: 15rem;
+  height: 6rem;
+  font-size: 5rem;
+  color: #646464;
+  text-align: center;
+  line-height: 7rem;
+  float: left;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.sub_ranked {
+  width: 120rem;
+  height: 85rem;
+  background-color: #f5f5f5;
+}
+
+.one_ranked {
+  width: 120rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.one {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 1rem 1rem -7rem;
+}
+
+.one_img {
+  width: 5rem;
+  height: 6rem;
+  background-image: url("../image/t1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.one_team {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 26rem 1rem 1rem;
+}
+
+.win_jumsu {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+.lose_jumsu {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 4rem;
+}
+
+.win_rate_dis {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 6rem;
+  font-size: 3rem;
+}
+
+.win_lose_jumsu {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem -1rem 1rem 10rem;
+}
+
+.two_ranked {
+  width: 120rem;
+  height: 8rem;
+  margin-top: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.two {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 1rem 1rem -7rem;
+}
+
+.two_img {
+  width: 5rem;
+  height: 6rem;
+  background-image: url("../image/geng.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.two_team {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 26rem 1rem 1rem;
+}
+
+.win_jumsu2 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+.lose_jumsu2 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 4rem;
+}
+
+.win_rate_dis2 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 6rem;
+  font-size: 2rem;
+}
+
+.win_lose_jumsu2 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem -1rem 1rem 10rem;
+}
+
+.three_ranked {
+  width: 120rem;
+  height: 8rem;
+  margin-top: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.three {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 1rem 1rem -7rem;
+}
+
+.three_img {
+  width: 5rem;
+  height: 6rem;
+  background-image: url("../image/kia.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.three_team {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 26rem 1rem 1rem;
+}
+
+.win_jumsu3 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+.lose_jumsu3 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 4rem;
+}
+
+.win_rate_dis3 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 6rem;
+  font-size: 2rem;
+}
+
+.win_lose_jumsu3 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem -1rem 1rem 10rem;
+}
+
+.four_ranked {
+  width: 120rem;
+  height: 8rem;
+  margin-top: 0.1rem;
+  margin-bottom: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.four {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 1rem 1rem -7rem;
+}
+
+.four_img {
+  width: 5rem;
+  height: 6rem;
+  background-image: url("../image/kt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.four_team {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 26rem 1rem 1rem;
+}
+
+.win_jumsu4 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+.lose_jumsu4 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 4rem;
+}
+
+.win_rate_dis4 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem 0rem 1rem 6rem;
+  font-size: 2rem;
+}
+
+.win_lose_jumsu4 {
+  width: 5rem;
+  height: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  line-height: 6rem;
+  float: left;
+  color: #646464;
+  margin: 1rem -1rem 1rem 10rem;
+}
+
+.five_after_rank, .five_after_rank2 {
+  width: 55rem;
+  height: 8rem;
+  display: inline-block;
+  margin: 3rem 0 0 3rem;
+  line-height: 10rem;
+  color: #646464;
+}
+
+.five_after_rank .text_info, .five_after_rank2 .text_info {
+  display: inline-block;
+  width: 7rem;
+  height: 4rem;
+  margin: 1rem 1rem 0 1rem;
+  color: #646464;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.five_after_rank div:nth-child(1), .five_after_rank2 div:nth-child(1) {
+  margin: 1rem 5rem 0 1rem;
+}
+
+.five_after_rank2 {
+  width: 52rem;
+  position: absolute;
+  top: 60%;
+  left: 54%;
+}
+
+.five_ranked, .nine_ranked, .seven_ranked, .eight_ranked, .six_ranked, .ten_ranked {
+  width: 55rem;
+  height: 6rem;
+  margin-top: 2rem;
+}
+
+.five_ranked div:nth-child(1), .nine_ranked div:nth-child(1), .seven_ranked div:nth-child(1), .eight_ranked div:nth-child(1), .six_ranked div:nth-child(1), .ten_ranked div:nth-child(1) {
+  margin-left: 2.5rem;
+}
+
+.five, .five_team, .win_jumsu5, .win_jumsu9, .win_jumsu7, .win_jumsu8, .win_jumsu6, .win_jumsu10, .lose_jumsu5, .lose_jumsu9, .lose_jumsu7, .lose_jumsu8, .lose_jumsu6, .lose_jumsu10, .win_rate_dis5, .win_rate_dis9, .win_rate_dis7, .win_rate_dis8, .win_rate_dis6, .win_rate_dis10, .win_lose_jumsu5, .win_lose_jumsu9, .win_lose_jumsu7, .win_lose_jumsu8, .win_lose_jumsu6, .win_lose_jumsu10, .nine, .nine_team, .seven, .seven_team, .eight, .eight_team, .six, .six_team, .ten, .ten_team {
+  width: 3.5rem;
+  height: 4rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 4rem;
+  color: #646464;
+  margin: 1rem 0.5rem 1rem 1rem;
+  float: left;
+}
+
+.five_img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../image/drx.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 0;
+}
+
+.win_jumsu5, .win_jumsu9, .win_jumsu7, .win_jumsu8, .win_jumsu6, .win_jumsu10 {
+  margin: 1rem 1rem 1rem 4.5rem;
+}
+
+.lose_jumsu5, .lose_jumsu9, .lose_jumsu7, .lose_jumsu8, .lose_jumsu6, .lose_jumsu10 {
+  margin: 1rem 1rem 1rem 4.8rem;
+}
+
+.win_rate_dis5, .win_rate_dis9, .win_rate_dis7, .win_rate_dis8, .win_rate_dis6, .win_rate_dis10 {
+  margin: 1rem 1rem 1rem 5rem;
+}
+
+.win_lose_jumsu5, .win_lose_jumsu9, .win_lose_jumsu7, .win_lose_jumsu8, .win_lose_jumsu6, .win_lose_jumsu10 {
+  margin: 1rem 1rem 1rem 6rem;
+}
+
+.nine_img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../image/redfoce.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 0;
+}
+
+.seven_img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../image/hanwha.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 0;
+}
+
+.eight_ranked {
+  position: absolute;
+  top: 77%;
+  left: 54%;
+}
+
+.eight_img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../image/fredit.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 0rem;
+}
+
+.six_ranked {
+  position: absolute;
+  top: 70%;
+  left: 54%;
+}
+
+.six_img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../image/sandbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 0;
+}
+
+.ten_ranked {
+  position: absolute;
+  top: 85%;
+  left: 54%;
+}
+
+.ten_img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../image/freecs.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  margin: 1rem 0;
+}
+
+.line2 {
+  width: 0.1rem;
+  height: 15rem;
+  background-color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+
+.full_loster {
+  width: 120rem;
+  height: 10rem;
+  text-align: center;
+  color: #646464;
+  font-size: 6rem;
+  line-height: 10rem;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.img_box {
+  width: 100rem;
+  height: 15rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0rem auto;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+.img_box2 {
+  width: 100rem;
+  height: 15rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 45rem;
+  border-radius: 2rem;
+}
+
+.five_team_logo {
+  width: 95rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2.5rem 2.5rem 1rem 2.5rem;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 2rem;
+}
+
+.five_team_logo li {
+  width: 20rem;
+  height: 7.5rem;
+  text-align: center;
+}
+
+[class*="size_img"]:hover {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+.t1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/t1.png");
+}
+
+.gen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/geng.svg");
+}
+
+.dk {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/kia.png");
+}
+
+.kt {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/kt.png");
+}
+
+.sandbox {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/sandbox.png");
+}
+
+.hanwha {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/hanwha.png");
+}
+
+.bro {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/fredit.png");
+}
+
+.drx {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/drx.png");
+}
+
+.kdf {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/freecs.png");
+}
+
+.redfoce {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/redfoce.png");
+}
+
+.logo_push {
+  width: 80rem;
+  height: 30rem;
+  position: absolute;
+  top: 38%;
+  left: 17%;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 30rem;
+  color: #eb0000;
+  -webkit-animation: logo_push 0.5s linear infinite;
+          animation: logo_push 0.5s linear infinite;
+}
+
+.logo_push1 {
+  top: 8%;
+  left: -38%;
+}
+
+@-webkit-keyframes logo_push {
+  0% {
+    color: #646464;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes logo_push {
+  0% {
+    color: #646464;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.text_box {
+  width: 80rem;
+  height: 30rem;
+  background-color: white;
+  position: absolute;
+  top: 37.5%;
+  left: 17%;
+  background-image: url("../image/lolmap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  display: none;
+}
+
+.human_super {
+  width: 20rem;
+  height: 24rem;
+  font-size: 3rem;
+  float: left;
+  line-height: 8rem;
+  text-align: right;
+  margin: 3.5rem 2rem 2rem 2rem;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem #464646;
+}
+
+.human_player {
+  width: 48rem;
+  height: 24rem;
+  font-size: 3rem;
+  float: left;
+  line-height: 8rem;
+  text-align: left;
+  margin: 3.5rem 2rem 2rem 6rem;
+  color: #fff;
+}
+
+.main_box5 {
+  width: 120rem;
+  height: 103rem;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.league_of_legends {
+  width: 30rem;
+  height: 15rem;
+  background-image: url("../image/league_of_legend.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background--webkit-transform: rotate(40deg);
+  background--moz-transform: rotate(40deg);
+  background--ms-transform: rotate(40deg);
+  background--o-transform: rotate(40deg);
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  position: absolute;
+  top: 60%;
+  left: 73%;
+}
+
+.lol_icon {
+  width: 30rem;
+  height: 15rem;
+  background-image: url("../image/lol_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 27%;
+  left: 52%;
+}
+
+.video_box {
+  width: 120rem;
+  height: 95rem;
+  display: inline-block;
+}
+
+.video1 {
+  width: 55rem;
+  height: 60rem;
+  background-color: #d2d2d2;
+  display: inline-block;
+  margin: 15rem 1rem 1rem 8rem;
+  border-radius: 2rem;
+}
+
+.highlight_video1 {
+  width: 50rem;
+  height: 40rem;
+  margin: 3rem 2.5rem 1rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.text_memo {
+  width: 35rem;
+  height: 15rem;
+  margin: 1rem 10em 1rem 10rem;
+  font-size: 4rem;
+  color: #646464;
+}
+
+.video_left, .video_right {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5rem;
+  position: absolute;
+  top: 74%;
+  left: 9%;
+}
+
+.video_right {
+  left: 46%;
+}
+
+[class*="video_btn"]:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: #eb0000;
+}
+
+.beam:nth-child(1) {
+  width: 70rem;
+  height: 8rem;
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 7.5rem;
+  color: #646464;
+  list-style-type: none;
+  color: red;
+}
+
+.beam:nth-child(2) {
+  width: 70rem;
+  height: 8rem;
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 7.5rem;
+  color: #646464;
+  list-style-type: none;
+  display: none;
+}
+
+.beam:nth-child(3) {
+  width: 70rem;
+  height: 8rem;
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 7.5rem;
+  color: #646464;
+  list-style-type: none;
+  display: none;
+}
+
+.beam:nth-child(4) {
+  width: 70rem;
+  height: 8rem;
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 7.5rem;
+  color: #646464;
+  list-style-type: none;
+  display: none;
+}
+
+.beam:nth-child(5) {
+  width: 70rem;
+  height: 8rem;
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 7.5rem;
+  color: #646464;
+  list-style-type: none;
+  display: none;
+}
+
+.beam {
+  transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  -o-transform: rotate(-50deg);
+}
+
+.main_box7 {
+  width: 120rem;
+  height: 90rem;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.road_title, .ticket_title {
+  margin-bottom: 5rem;
+}
+
+.road_title background, .ticket_title background {
+  color: #f5f5f5;
+}
+
+.road_map {
+  float: left;
+  margin: 3rem 1rem 0 3rem;
+}
+
+.list_main_info {
+  width: 42rem;
+  height: 43rem;
+  position: absolute;
+  top: 25%;
+  left: 64%;
+}
+
+.list_info {
+  width: 42rem;
+  height: 43rem;
+  float: left;
+  list-style-type: none;
+  color: #646464;
+}
+
+.list_mid_box {
+  width: 40rem;
+  height: 5rem;
+  display: inline-block;
+  margin: 0.7rem 0.1rem 5rem 2rem;
+}
+
+.text1 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 3rem;
+  float: left;
+  line-height: 3rem;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.text_phone {
+  width: 20rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  float: left;
+  margin: 1rem 1rem 3rem 5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.text2 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 3rem;
+  float: left;
+  line-height: 3rem;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.text_address {
+  width: 20rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  float: left;
+  margin: 1rem 1rem 3rem 5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.text3 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 3rem;
+  float: left;
+  line-height: 3rem;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.text_time {
+  width: 20rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  float: left;
+  margin: 1rem 1rem 3rem 5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.text4 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 3rem;
+  float: left;
+  line-height: 3rem;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.text_parking {
+  width: 20rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  float: left;
+  margin: 1rem 1rem 3rem 5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.main_box6 {
+  width: 120rem;
+  height: 95rem;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.ticket_info {
+  width: 120rem;
+  height: 85rem;
+}
+
+.ticket_img {
+  width: 80rem;
+  height: 60rem;
+  background-image: url("../image/ticket.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+.ticket_buy_address {
+  width: 60rem;
+  height: 3em;
+  float: left;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 6rem;
+  margin: 2rem 10rem 2rem 30rem;
+}
+
+.ticket_buy_address:hover {
+  color: #646464;
+}
+
+.tiket_day_selection {
+  width: 40rem;
+  height: 5rem;
+  font-size: 3rem;
+  position: absolute;
+  top: 78%;
+  left: 34%;
+  text-align: center;
+  line-height: 5rem;
+  color: #464646;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.calender_box2 {
+  width: 70rem;
+  height: 50rem;
+  position: absolute;
+  top: 20%;
+  left: 21%;
+  border-radius: 2rem;
+  background-image: url("https://www.koreaminecraft.net/files/attach/images/2629848/083/907/cbd2966985564234718fc197bcec6bb3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.weekday_select {
+  color: white;
+}
+
+.weekday_select:hover {
+  cursor: pointer;
+  color: #f00;
+}
+
+.play_day2 {
+  color: #bc28fb;
+}
+
+.no_play {
+  color: #f00;
+}
+
+.tiket_buy_modal {
+  width: 80rem;
+  height: 70rem;
+  background-color: #fff;
+  border: 0.3rem solid whitesmoke;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  border-radius: 2rem;
+  z-index: 10001;
+  display: none;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.one_tiket_buy {
+  width: 100%;
+  height: 15rem;
+  border-bottom: 0.3rem solid whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.week_img1 {
+  width: 25rem;
+  height: 100%;
+  background-image: url("../image/tiket1-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.week_img2 {
+  width: 25rem;
+  height: 100%;
+  background-image: url("../image/ticket2-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.week_text {
+  width: 10rem;
+  height: 100%;
+  text-align: center;
+  line-height: 15rem;
+  font-size: 3rem;
+  color: #646464;
+}
+
+.num_box {
+  width: 30rem;
+  height: 100%;
+  text-align: center;
+  line-height: 15rem;
+}
+
+.common_minus_btn,
+.common_plus_btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #fff;
+  line-height: 5rem;
+}
+
+.common_minus_btn:hover,
+.common_plus_btn:hover {
+  cursor: pointer;
+  color: #f00;
+  background-color: whitesmoke;
+}
+
+.common_number {
+  width: 5rem;
+  height: 4.5rem;
+  font-size: 3rem;
+  text-align: center;
+  outline: 0;
+}
+
+.ticket_buy_text {
+  width: 60rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.ticket_buy_text_info {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #646464;
+}
+
+.pre_buy_btn {
+  width: 18rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #646464;
+  outline: 0;
+  background-color: #fff;
+  position: relative;
+  top: 8%;
+  left: 40%;
+}
+
+.out_btn {
+  width: 18rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #646464;
+  outline: 0;
+  background-color: #fff;
+  position: relative;
+  top: 18%;
+  left: 17%;
+}
+
+.pre_buy_btn:hover,
+.alert_notice:hover,
+.out_btn:hover {
+  cursor: pointer;
+  color: #f00;
+  background-color: whitesmoke;
+}
+
+.alert_notice {
+  width: 22rem;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 69%;
+  left: 65%;
+  color: #646464;
+  border-radius: 2rem;
+  display: none;
+}
+
+.x_mouse {
+  width: 3rem;
+  height: 1rem;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  text-align: center;
+  line-height: 1rem;
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes x_mouse {
+  0% {
+    color: #646464;
+  }
+  100% {
+    color: #f00;
+  }
+}
+
+@keyframes x_mouse {
+  0% {
+    color: #646464;
+  }
+  100% {
+    color: #f00;
+  }
+}
+/*# sourceMappingURL=index.css.map */
